@@ -8,38 +8,58 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
     <div class="pb-12 mt-5">
       <div class="text-xl py-1">Hey there 👋</div>
-      <div class="text-5xl font-bold">I'm Karol Dobrek</div>
-      <div class="text-3xl py-3 font-bold">Software Engineer</div>
+      <div class="text-5xl font-bold">Jestem Karol Dobrek</div>
+      <div class="text-3xl py-3 font-bold">Aspirujący Software Engineer</div>
       <div class="py-2">
         <text class="text-lg">
-          I made this template for everyone who needs to create a personal website easily and quickly. This template includes Project Section, CV Section, Store, Paginated Blog, RSS Feed, SEO Friendly, Responsive Desing and 29 Visual themes. I hope you find it useful!
+          Jestem 25-letnim studentem Politechniki Częstochowskiej, a moją pasją jest programowanie i tworzenie aplikacji. Mój cel zawodowy to stać się Fullstack Developerem. Interesuję się technologią oraz różnymi narzędziami wykorzystywanymi w procesie tworzenia aplikacji. Zawsze staram się dopasować wybrane narzędzia do konkretnego projektu, aby zapewnić optymalną funkcjonalność i wydajność. Przykładowo, wybierając bazę danych dla danej aplikacji, kieruję się przede wszystkim jej dostosowaniem do specyfiki projektu. Oprócz programowania, moim hobby są gry wideo, które stanowią dla mnie świetny sposób na relaks i odpoczynek.
           </text
         >
       </div>
     </div>
     <div>
-      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+      <div class="text-3xl w-full font-bold mb-2">Moje ostatnie projekty {"</>"}</div>
     </div>
 
     <HorizontalCard
-      title="Demo Project 1"
-      img="/post_img.webp"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      url="#"
+      title="3D Chart"
+      img="./public/3DChart.png"
+      desc="Aplikacja powstała przy użyciu React, JavaScript, Plotly. Aplikacja ta może wygenerować losowy wykres 3D o podanym przedziale wartości jak i wygenerować wykres z pliku .csv"
+      url="https://3-d-chart-rhw3hd7ra-inakus.vercel.app/"
+      github="https://github.com/Inakus/3D-Chart"
     />
     <div class="divider my-0"></div>
     <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Movie Search"
+    img="./public/MovieSearch.png"
+    desc="Aplikacja powstała przy użyciu React, TypeScript, Vite. Aplikacja ta używa OMDb API do wyszkuwiania filmów z bazy IMDB."
+    url="https://dancing-mooncake-cfa270.netlify.app/"
+    github="https://github.com/Inakus/Movie-app"
   />
     <div class="divider my-0"></div>
     <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="TodoApp"
+    img="./public/TodoApp.png"
+    desc="Aplikacja powstała za pomocą React, TypeScript, Nextjs, Express, MongoDB ,RESTful api. Klasyczna aplikacja Todo w której możemy zaznaczyć czy dana czynność została wykonana lub też ją usunąć"
+    url="https://todo-nextjs-mu.vercel.app/"
+    github="https://github.com/Inakus/Todo-Nextjs"
   />
-
+    <div class="divider my-0"></div>
+    <HorizontalCard
+    title="Social Media Clone"
+    img="./public/SocialMediaClone.png"
+    desc="Aplikacja powstała przy użyciu React, TypeScript, TRPC, Prisma, MySql. W trakcie pracy na tą chwilę posiada system logowania i rejestracji oraz api routy."
+    url="https://github.com/Inakus/SocialMedia-Clone"
+    badge="WIP"
+    github="https://github.com/Inakus/SocialMedia-Clone"
+  />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+    title="Blog/Notatki"
+    alt="Blog/Notatki aplikacja"
+    desc="Aplikacja powstała przy użyciu React, JavaScript, MongoDB, Express. Jest to moja pierwsza aplikacja którą stworzyłem, można dodać notatkę/post po czym usunąć go lub edytować. Pozwala wyszukiwać posty po nazwię."
+    url="https://github.com/Inakus/Blog-FrontEnd-React"
+    github="https://github.com/Inakus/Blog-BackEnd"
+  />
+    
 </BaseLayout>

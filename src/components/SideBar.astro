@@ -3,7 +3,6 @@
   <div class="menu flex flex-col flex-nowrap p-4 overflow-y-auto w-[21rem] bg-base-200 text-base-content">
     <ul class="grow shrink">
       <li><a id="home" href="/">Home</a></li>
-      <li><a id="projects" href="/projects">Projects</a></li>
       <li><a id="cv" href="/cv">CV</a></li>
       <li><a href="mailto:dobrekkarol@gmail.com">Contact</a></li>
     </ul>
@@ -45,23 +44,24 @@
 </div>
 <script>
   const homeLink = document.getElementById("home");
-  const projectsLink = document.getElementById("projects");
   const cvLink = document.getElementById("cv");
 
   var isHome = true;
 
   const url = window.location.href;
 
-  const pages = [projectsLink, cvLink];
+  const pages = [cvLink];
 
   const activeClass = "bg-base-300";
 
-  pages.forEach((element) => {
+  pages.map((element) => {
+    if(!element) return
     if (url.includes(element.id)) {
       isHome = false;
       element.classList.add(activeClass);
     }
   });
+  if(!homeLink) return 
   if (isHome) {
     homeLink.classList.add(activeClass);
   }
