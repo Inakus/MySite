@@ -55,14 +55,16 @@
   const activeClass = "bg-base-300";
 
   pages.map((element) => {
-    if(!element) return
-    if (url.includes(element.id)) {
-      isHome = false;
-      element.classList.add(activeClass);
+    if(element){
+      if (url.includes(element.id)) {
+        isHome = false;
+        element.classList.add(activeClass);
+      }
     }
   });
-  if(!homeLink) return 
-  if (isHome) {
-    homeLink.classList.add(activeClass);
-  }
+  if(homeLink){
+    if (isHome) {
+      homeLink.classList.add(activeClass);
+    }
+  } 
 </script>
