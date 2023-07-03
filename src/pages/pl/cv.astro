@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TimeLineElement from "../../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title = "Resume">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profil</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+   Jestem Studentem Politechniki Częstochowskiej na kierunku Informatyka, 
+   posiadam szeroki zakres umiejętności związanych z programowaniem w językach JavaScript i TypeScript, 
+   a także podstawy C# i OOP. Mam doświadczenie w pracy z frameworkiem React i jestem w stanie nauczyć się innych frameworków, 
+   jeśli będzie to wymagane w pracy. Znam się również na nodejs i potrafię używać go zarówno w kontekście frontendu, 
+   jak i backendu. Mam doświadczenie w pracy z frameworkiem express, co pozwoli mi na efektywne tworzenie aplikacji internetowych. 
+   W mojej pracy kładę nacisk na dokładność i precyzję, a także na ciągłe poszerzanie swoich umiejętności poprzez uczenie się nowych 
+   technologii i narzędzi programistycznych.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Edukacja</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Technik Informatyk"
+      subtitle="Od 2014 do 2018, Zespół Szkół im. Stanisława Staszica w Zawierciu"
+    />
+    <TimeLineElement
+      title="Inżynier"
+      subtitle="Od 2020 do teraz, Politechnika Częstochowska"
+    />
+  </div>
+
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Umiejętności</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Polski (Native)</li>
+    <li>Angielski (B2)</li>
+    <li>JavaScript</li>
+    <li>TypeScript</li>
+    <li>C#</li>
+    <li>Postgres SQL</li>
+    <li>MySQL</li>
+    <li>MongoDB</li>
+    <li>Prisma</li>
+    <li>CSS</li>
+    <li>HTML</li>
+    <li>Node.js</li>
+    <li>Astro</li>
+    <li>React</li>
+    <li>Nextjs</li>
+    <li>Bootstrap</li>
+    <li>Taildwind</li>
+    <li>Git</li>
+  </ul>
+</BaseLayout>
